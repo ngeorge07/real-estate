@@ -5,7 +5,116 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+}
+
+header a, h1 {
+  font-family: multi-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+header, main {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 img {
   width: 20%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2.5rem auto;
+}
+
+header a {
+  color: #8fcbd3;
+  background-color: transparent;
+  border: 2px solid #8fcbd3;
+  font-size: 1.3rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  background-image: linear-gradient(45deg, #8fcbd3 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background-position 0.3s ease-in-out;
+  transition: background-position 0.3s ease-in-out;
+}
+
+header a:hover {
+  outline: 0;
+  color: white;
+  background-position: 0;
+}
+
+h1 {
+  font-size: 2.9rem;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav div {
+  height: 0.5px;
+  width: 28px;
+  background: grey;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: multi-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8rem;
+}
+
+nav button:after {
+  content: "";
+  color: #8fcbd3;
+  display: block;
+  width: 0;
+  height: 1px;
+  bottom: 0px;
+  position: relative;
+  background-color: currentColor;
+  -webkit-transition: width 0.5s cubic-bezier(0.73, 0, 0.38, 1);
+  transition: width 0.5s cubic-bezier(0.73, 0, 0.38, 1);
+}
+
+nav button:hover:after {
+  width: 100%;
+}
+
+nav button:last-of-type {
+  color: #4e7791;
 }
 /*# sourceMappingURL=style.css.map */

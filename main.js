@@ -1,6 +1,6 @@
 function getData() {
   fetch(
-    "https://georgendesign.com/Module8/real-estate/wp-json/wp/v2/house?_embed"
+    "https://georgendesign.com/Module8/real-estate/wp-json/wp/v2/house?_embed&order=asc"
   )
     .then((response) => response.json())
     .then(showPosts);
